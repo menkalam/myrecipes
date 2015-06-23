@@ -16,6 +16,32 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
+  
+  1. Test Specification for Receipes
+     
+     name: string
+     summary: text
+     description: test
+      
+      - name must be present
+      - name must be between 5 characters and less than 100 characters
+      - Summary must be present
+      - Summary must be between 10 characters and less than 150 characters
+      - description must be present
+      - description must be between 20 characters and less than 500 characters
+      - chef_id must be present
+      
+    2. Test Specification for Chefs
+     
+     chefname: string
+     email: string
+     description: test
+      
+      - chefname must be present
+      - chefname must be between 3 characters and less than 40 characters
+      - email must be present
+      - email must be unique (since we'll use this for logins later)
+      - email must be valid
 
 * Services (job queues, cache servers, search engines, etc.)
 
